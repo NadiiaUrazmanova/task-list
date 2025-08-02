@@ -14,3 +14,7 @@
       <p>Текст</p>
   </li>
 */
+import { onHeaderFormSubmit, onTaskDelete } from './js/handlers.js';
+import { refs } from './js/refs.js';
+refs.headerForm.addEventListener('submit', onHeaderFormSubmit);
+refs.tasksList.addEventListener('click', onTaskDelete);
